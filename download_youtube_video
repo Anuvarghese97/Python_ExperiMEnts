@@ -1,9 +1,0 @@
-from asyncio import streams
-from pytube import YouTube
-
-link = "Enter URL of YOUTUBE VIDEO "
-
-video = YouTube(link)
-stream = video.streams.get_highest_resolution()
-emailid = input("Enter your email id: ")
-stream.download()
